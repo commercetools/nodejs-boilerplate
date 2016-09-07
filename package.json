@@ -1,21 +1,45 @@
 {
   "name": "commercetools-nodejs-boilerplate",
   "version": "1.0.0-beta.1",
-  "description": "",
   "main": "index.js",
+  "description": "Generic Boilerplate for bootstrapping NodeJS applications",
+  "main": "./lib/main",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 0"
+    "test": "npm test",
+    "commit": "git-cz"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/commercetools/nodejs-boilerplate.git"
   },
-  "keywords": [],
-  "author": "Abimbola Idowu <abimbola2010@gmail.com> (https://github.com/hisabimbola)",
-  "license": "ISC",
+  "keywords": [
+    "commercetools",
+    "boilerplate",
+    "sphere",
+    "sphereio",
+    "starter"
+  ],
+  "author": "Abimbola Idowu <abimbola.idowu@commercetools.de> (https://github.com/hisabimbola)",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/commercetools/nodejs-boilerplate/issues"
   },
-  "homepage": "https://github.com/commercetools/nodejs-boilerplate#readme"
+  "engines": {
+    "node": ">= 4.5.0"
+  },
+  "homepage": "https://github.com/commercetools/nodejs-boilerplate#readme",
+  "devDependencies": {
+    "commitizen": "^2.8.6",
+    "cz-conventional-changelog": "^1.2.0",
+    "ghooks": "^1.3.2"
+  },
+  "config": {
+    "ghooks": {
+      "commit-msg": "validate-commit-msg"
+    },
+    "commitizen": {
+      "path": "cz-conventional-changelog"
+    }
+  }
 }
 
