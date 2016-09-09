@@ -6,9 +6,10 @@
   "main": "./lib/main",
   "scripts": {
     "build": "babel src -d lib",
-    "test": "npm test",
+    "test": "NODE_ENV=test babel-node test/*.spec.js test/*/**spec.js | tap-spec",
     "lint": "./scripts/lint src test",
-    "commit": "git-cz"
+    "commit": "git-cz",
+    "test:watch": "watch \"npm test\" src test -d"
   },
   "repository": {
     "type": "git",
@@ -34,10 +35,13 @@
     "babel-cli": "^6.14.0",
     "babel-preset-es2015": "^6.14.0",
     "commitizen": "^2.8.6",
-    "ghooks": "^1.3.2",
     "cz-conventional-changelog": "^1.2.0",
     "eslint-config-commercetools": "latest",
-    "validate-commit-msg": "^2.8.0"
+    "ghooks": "^1.3.2",
+    "tap-spec": "^4.1.1",
+    "tape": "^4.6.0",
+    "validate-commit-msg": "^2.8.0",
+    "watch": "^0.19.2"
   },
   "eslintConfig": {
     "extends": "commercetools"
