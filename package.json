@@ -6,7 +6,9 @@
   "main": "./lib/main",
   "scripts": {
     "build": "babel src -d lib",
-    "test": "NODE_ENV=test babel-node test/*.spec.js test/*/**spec.js | tap-spec",
+    "test": "npm run lint && cross-env NODE_ENV=test babel-node test/*.spec.js test/*/**spec.js | tap-spec",
+    "coverage": "npm run lint && cross-env NODE_ENV=test babel-node ./node_modules/isparta/bin/isparta cover --cmd test/* --include src/*",
+    "coverage:html": "cross-env NODE_ENV=test babel-node ./node_modules/isparta/bin/isparta cover --cmd test/* --include src/* --report html",
     "lint": "./scripts/lint src test",
     "commit": "git-cz",
     "test:watch": "watch \"npm test\" src test -d"
@@ -35,9 +37,11 @@
     "babel-cli": "^6.14.0",
     "babel-preset-es2015": "^6.14.0",
     "commitizen": "^2.8.6",
+    "cross-env": "^2.0.1",
     "cz-conventional-changelog": "^1.2.0",
     "eslint-config-commercetools": "latest",
     "ghooks": "^1.3.2",
+    "isparta": "^4.0.0",
     "tap-spec": "^4.1.1",
     "tape": "^4.6.0",
     "validate-commit-msg": "^2.8.0",
