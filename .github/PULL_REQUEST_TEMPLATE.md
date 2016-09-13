@@ -1,11 +1,11 @@
 #### Summary
-<!--- _provide a short summary of your changes_ -->
+<!-- provide a short summary of your changes -->
 
 #### Description
-<!--- _describe the changes in this PR here and provide some context_ -->
+<!-- _describe the changes in this PR here and provide some context_ -->
 
 #### Reviewers
-<!-- _The persons assigned to review this PR should mark their item as done when they are happy with this PR to be merged_ -->
+<!-- The persons assigned to review this PR should mark their item as done when they are happy with this PR to be merged -->
 
 - [ ] Reviewer 1 has approved the PR
 - [ ] Reviewer 2 has approved the PR
