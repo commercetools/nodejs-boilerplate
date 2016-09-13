@@ -13,7 +13,12 @@
     "url": "https://github.com/commercetools/nodejs-boilerplate/issues"
   },
   "license": "MIT",
-  "author": "Abimbola Idowu <abimbola.idowu@commercetools.de> (https://github.com/hisabimbola)",
+  "contributors": [
+    "Abimbola Idowu <abimbola.idowu@commercetools.de> (https://github.com/hisabimbola)",
+    "Nicola Molinari <nicola.molinari@commercetools.de>",
+    "Philipp Sporrer <philipp.sporrer@commercetools.de>",
+    "Selwyn <talk@selwyn.cc> (https://selwyn.cc/)"
+  ],
   "main": "./lib/main",
   "repository": {
     "type": "git",
