@@ -1,4 +1,5 @@
-<<<<<<< 6a12eb2fd93429dfe50a12ff07b3af7ba525488a
+![commercetools-icon](https://github.com/commercetools/press-kit/blob/master/PNG/72DPI/CT%20logo%20horizontal%20RGB%2072dpi.png?raw=true)
+
 # Node.js boilerplate
 [![Travis Build Status][travis-icon]][travis]
 [![Codecov Coverage Status][codecov-icon]][codecov]
@@ -43,8 +44,6 @@ Now you're ready for liftoff!
 Don't forget to add the project to [Waffle.io](https://waffle.io/).
 
 ## Guidelines
-
-![SPHERE.IO icon](https://github.com/commercetools/press-kit/blob/master/PNG/72DPI/CT%20logo%20horizontal%20RGB%2072dpi.png?raw=true)
 
 [commercetools]: https://commercetools.com/
 [travis]: https://travis-ci.org/commercetools/nodejs-boilerplate
