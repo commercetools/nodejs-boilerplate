@@ -1,47 +1,49 @@
 {
   "name": "commercetools-nodejs-boilerplate",
   "version": "1.0.0-beta.1",
-  "main": "index.js",
   "description": "Generic Boilerplate for bootstrapping NodeJS applications",
-  "main": "./lib/main",
-  "scripts": {
-    "clean": "rimraf lib && mkdirp lib",
-    "build": "npm run clean && babel src -d lib",
-    "test": "npm run lint && cross-env NODE_ENV=test babel-node test/*.spec.js test/*/**spec.js | tap-spec",
-    "coverage": "npm run lint && cross-env NODE_ENV=test nyc --reporter=lcov --reporter=text npm test",
-    "coverage:ci": "npm run lint && cross-env NODE_ENV=test nyc --reporter=lcov --reporter=text npm test && codecov",
-    "coverage:html": "npm run lint && cross-env NODE_ENV=test nyc --reporter=html npm test",
-    "lint": "./scripts/lint src test",
-    "commit": "git-cz",
-    "test:watch": "watch \"npm run coverage:html\" src test -d"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/commercetools/nodejs-boilerplate.git"
-  },
-  "nyc": {
-    "include": [
-      "src/*.js"
-    ],
-    "sourceMap": false,
-    "instrument": false
-  },
   "keywords": [
     "commercetools",
+    "nodejs",
     "boilerplate",
-    "sphere",
-    "sphereio",
     "starter"
   ],
-  "author": "Abimbola Idowu <abimbola.idowu@commercetools.de> (https://github.com/hisabimbola)",
-  "license": "MIT",
+  "homepage": "https://github.com/commercetools/nodejs-boilerplate#readme",
   "bugs": {
     "url": "https://github.com/commercetools/nodejs-boilerplate/issues"
   },
-  "engines": {
-    "node": ">= 4.5.0"
+  "license": "MIT",
+  "author": "Abimbola Idowu <abimbola.idowu@commercetools.de> (https://github.com/hisabimbola)",
+  "main": "./lib/main",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/commercetools/nodejs-boilerplate.git"
   },
-  "homepage": "https://github.com/commercetools/nodejs-boilerplate#readme",
+  "scripts": {
+    "start": "npm run watch",
+    "test": "cross-env NODE_ENV=test babel-node test/*.spec.js test/*/**spec.js | tap-spec",
+    "test:watch": "watch \"npm run coverage:html\" src test -d",
+    "build": "npm run clean && babel src -d lib",
+    "clean": "rimraf lib && mkdirp lib",
+    "commit": "git-cz",
+    "codecov": "codecov",
+    "coverage": "npm run lint && cross-env NODE_ENV=test nyc --reporter=lcov --reporter=text npm test",
+    "coverage:html": "npm run lint && cross-env NODE_ENV=test nyc --reporter=html npm test",
+    "lint": "./scripts/lint src test",
+    "watch": "watch 'npm run test && npm run lint --silent' src bin"
+  },
+  "config": {
+    "commitizen": {
+      "path": "cz-conventional-changelog"
+    },
+    "ghooks": {
+      "commit-msg": "validate-commit-msg",
+      "pre-commit": "./scripts/lint-staged-files"
+    }
+  },
+  "eslintConfig": {
+    "extends": "commercetools"
+  },
   "devDependencies": {
     "babel-cli": "^6.14.0",
     "babel-plugin-istanbul": "^2.0.1",
@@ -59,17 +61,15 @@
     "validate-commit-msg": "^2.8.0",
     "watch": "^0.19.2"
   },
-  "eslintConfig": {
-    "extends": "commercetools"
+  "engines": {
+    "node": ">= 4.5.0"
   },
-  "config": {
-    "ghooks": {
-      "commit-msg": "validate-commit-msg",
-      "pre-commit": "./scripts/lint-staged-files"
-    },
-    "commitizen": {
-      "path": "cz-conventional-changelog"
-    }
+  "nyc": {
+    "include": [
+      "src/*.js"
+    ],
+    "sourceMap": false,
+    "instrument": false
   }
 }
 
