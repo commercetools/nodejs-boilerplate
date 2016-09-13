@@ -32,3 +32,5 @@ Before you create a new issue:
   We try to maintain a code coverage of 100%. Please ensure you do so too 😉
 
 ## Build/linting
+  * We use babel-6 (preset:es2015) for compiling our ES6 to ES5.
+  * To lint we have an eslint configuration that extends airbnb configuration. We recommend you installing it to lint your project.
