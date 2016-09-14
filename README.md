@@ -13,6 +13,7 @@ Start your next [Node.js commercetools](http://commercetools.github.io/nodejs-to
 - TravisCI: config and setup included.
 - GreenKeeper: keep your dependencies up-to-date.
 - Guidelines: includes a contributing document
+- Readme: includes a readme template
 
 ## Quick Start
 1. Clone this repo using `git clone --depth=1 https://github.com/commercetools/nodejs-boilerplate.git`
