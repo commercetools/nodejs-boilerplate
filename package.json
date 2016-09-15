@@ -28,7 +28,7 @@
   "scripts": {
     "start": "npm run watch",
     "test": "cross-env NODE_ENV=test babel-node test/*.spec.js test/*/**spec.js | tap-spec",
-    "test:watch": "watch \"npm run coverage:html\" src test -d",
+    "test:watch": "watch \"npm test\" src test -d",
     "build": "npm run clean && babel src -d lib",
     "clean": "rimraf lib/* && mkdirp lib",
     "commit": "git-cz",
