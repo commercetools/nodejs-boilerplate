@@ -46,10 +46,6 @@ Make sure you have installed all of the following prerequisites on your developm
 
 Now you're ready for liftoff!
 
-
-## Development
-Don't forget to add the project to [Waffle.io](https://waffle.io/).
-
 ## Guidelines
 
 [commercetools]: https://commercetools.com/
