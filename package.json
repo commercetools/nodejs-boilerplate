@@ -32,7 +32,7 @@
     "build": "npm run clean && babel src -d lib",
     "clean": "rimraf lib/* && mkdirp lib",
     "commit": "git-cz",
-    "codecov": "codecov",
+    "codecov": "cat ./coverage/lcov.info | codecov",
     "coverage": "npm run lint && npm run clean && cross-env NODE_ENV=test nyc --reporter=lcov --reporter=text npm test",
     "coverage:html": "npm run lint && cross-env NODE_ENV=test nyc --reporter=html npm test",
     "lint": "./scripts/lint src test",
