@@ -26,28 +26,23 @@ Table of Contents
 - Guidelines: includes a contributing document
 - Readme: includes a readme template
 
-## Quick Start
-1. Clone this repo using `git clone --depth=1 https://github.com/commercetools/nodejs-boilerplate.git`
-2. Run `rm -r .git && npm run install` to clean the git repo and install dependencies.
-3. ???
-
 ## Requirements
 Make sure you have installed all of the following prerequisites on your development machine:
   * Git - [Download & Install Git](https://git-scm.com/downloads). OSX and Linux machines typically have this already installed.
   * Node.js - [Download & Install Node.js](https://nodejs.org/en/download/) and the npm package manager. If you encounter any problems, you can also use this [GitHub Gist](https://gist.github.com/isaacs/579814) to instalÂl Node.js.
 
 ## Usage
-  * Clone this repository
+  1. Clone this repository
 
   ```bash
-  $ git clone https://github.com/commercetools/nodejs-boilerplate.git nodejs-boilerplate
+  git clone --depth=1 https://github.com/commercetools/nodejs-boilerplate.git
   ```
-  * Run this command
+  2. Clean up and install
 
+  ```bash
+  cd nodejs-boilerplate && rm -r .git && npm install
   ```
-  $ cd nodejs-boilerplate && npm install
-  ```
-  * Update the package.json and readme
+  3. Update the package.json and readme
 
 Now you're ready for liftoff!
 
