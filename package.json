@@ -44,7 +44,7 @@
     },
     "ghooks": {
       "commit-msg": "validate-commit-msg",
-      "pre-commit": "npm test && ./scripts/lint-staged-files"
+      "pre-commit": "./scripts/lint-staged-files && npm test"
     }
   },
   "eslintConfig": {
