@@ -15,10 +15,10 @@
   },
   "license": "MIT",
   "contributors": [
-    "Abimbola Idowu <abimbola.idowu@commercetools.de> (https://github.com/hisabimbola)",
+    "Abimbola Idowu <abimbola.idowu@commercetools.de>",
     "Nicola Molinari <nicola.molinari@commercetools.de>",
     "Philipp Sporrer <philipp.sporrer@commercetools.de>",
-    "Selwyn <talk@selwyn.cc> (https://selwyn.cc/)"
+    "Selwyn Versteeg <selwyn.versteeg@commercetools.de>"
   ],
   "main": "./lib/main",
   "repository": {
