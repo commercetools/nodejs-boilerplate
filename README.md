@@ -25,6 +25,7 @@ Table of Contents
 - GreenKeeper: keep your dependencies up-to-date.
 - Guidelines: includes a contributing document
 - Readme: includes a readme template
+- Tests: Uses [tape][tape] for testing
 
 ## Requirements
 Make sure you have installed all of the following prerequisites on your development machine:
@@ -57,3 +58,4 @@ Now you're ready for liftoff!
 [david-icon]: https://img.shields.io/david/commercetools/nodejs-boilerplate.svg?style=flat-square
 [david-dev]: https://david-dm.org/commercetools/nodejs-boilerplate?type=dev
 [david-dev-icon]: https://img.shields.io/david/dev/commercetools/nodejs-boilerplate.svg?style=flat-square
+[tape]: https://www.npmjs.com/package/tape
