@@ -21,10 +21,6 @@ How to use this project, possibly with a small code example.
 ## Contributing
 See [CONTRIBUTING.md](CONTRIBUTING.md) for info on contributing to eslint-config
 
-<!-- License section. You should have a license file in your project. We really our opensource projects under the MIT-LICENSE -->
-## License
-Licensed under the [MIT LICENSE](LICENSE)
-
 [commercetools]: https://commercetools.com/
 [travis]: https://travis-ci.org/commercetools/project-title
 [travis-icon]: https://img.shields.io/travis/commercetools/project-title/master.svg?style=flat-square
