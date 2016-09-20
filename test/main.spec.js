@@ -1,5 +1,5 @@
 import test from 'tape'
-import addTwoNumbers from './../src/main'
+import addTwoNumbers from 'main'
 
 test('main module is a function', (t) => {
   t.equal(typeof addTwoNumbers, 'function')
