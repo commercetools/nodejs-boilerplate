@@ -17,23 +17,22 @@ Start your next [Node.js commercetools](http://commercetools.github.io/nodejs-to
 
 ## Requirements
 Make sure you have installed all of the following prerequisites on your development machine:
-  * Git - [Download & Install Git](https://git-scm.com/downloads). OSX and Linux machines typically have this already installed.
-  * Node.js - [Download & Install Node.js](https://nodejs.org/en/download/) and the npm package manager. If you encounter any problems, you can also use this [GitHub Gist](https://gist.github.com/isaacs/579814) to install Node.js.
+  * Git - [Download & Install Git](https://git-scm.com/downloads). MacOS and Linux machines typically have this already installed.
+  * Node.js - [Download & Install Node.js](https://nodejs.org/en/download/) and the npm package manager. Make sure to get the latest active LTS version. You could also use a Node.js version manager such as [n](https://github.com/tj/n) or [nvm](https://github.com/creationix/nvm).
 
 ## Usage
-  1. Clone this repository
+  1. Clone this repository:
 
   ```bash
   git clone --depth=1 https://github.com/commercetools/nodejs-boilerplate.git
   ```
   2. Clean up, setup and install.  
-  Takes the project name and an optional second directory like `bin` to use.
+  Takes the project name and an optional second directory like `bin` to use:
 
   ```bash
   sh setup.sh project-name optional-directory
   ```
   3. Now you're ready for liftoff!
-
 
 [commercetools]: https://commercetools.com/
 [commercetools-icon]: https://cdn.rawgit.com/commercetools/press-kit/master/PNG/72DPI/CT%20logo%20horizontal%20RGB%2072dpi.png
