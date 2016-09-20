@@ -26,11 +26,11 @@ Make sure you have installed all of the following prerequisites on your developm
   ```bash
   git clone --depth=1 https://github.com/commercetools/nodejs-boilerplate.git
   ```
-  2. Clean up, setup and install.  
-  Takes the project name and an optional second directory like `bin` to use:
+  2. Clean up, setup and install with `setup.sh`.  
+  You can pass in optional arguments like the project name and an additional directory name that you want to use, for example 'bin':
 
   ```bash
-  sh setup.sh project-name optional-directory
+  sh setup.sh awesome-cli bin
   ```
   3. Now you're ready for liftoff!
 
