@@ -8,16 +8,6 @@
 
 Start your next [Node.js commercetools](http://commercetools.github.io/nodejs-tools/) project in seconds.
 
-Table of Contents
-=================
-
-  * [Node.js boilerplate](#nodejs-boilerplate)
-    * [Features](#features)
-    * [Quick Start](#quick-start)
-    * [Requirements](#requirements)
-    * [Usage](#usage)
-    * [Development](#development)
-
 ## Features
 - Babel: use new JavaScript features while keeping compatibility.
 - TravisCI: config and setup included.
