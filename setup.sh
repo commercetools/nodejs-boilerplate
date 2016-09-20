@@ -14,6 +14,7 @@ git init
 # Fill in project name if argument is given
 if [ $1 ]; then
     sed -i "" "s/project-name/$1/g" "package.json"
+    sed -i "" "s/project-name/$1/g" "README.md"
     echo "Set project name to $1."
 fi
 
