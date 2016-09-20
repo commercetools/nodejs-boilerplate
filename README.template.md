@@ -2,21 +2,25 @@
 [![commercetools logo][commercetools-icon]][commercetools]
 
 # Unslugified Project Title
-<!-- Badges -->
 [![Travis Build Status][travis-icon]][travis]
 [![Codecov Coverage Status][codecov-icon]][codecov]
 [![David Dependencies Status][david-icon]][david]
 [![David devDependencies Status][david-dev-icon]][david-dev]
 
-A short description of what this project is about.
-
-<!-- Getting started section -->
-## Getting started
+A short description of what this project is about and it's core features. This might be followed by some points to clarify:
+- Do something with this
+- Supports other stuff
 
 ## Usage
-How to use this project, possibly with a small code example.
+How to use this project, possibly with a small code example. Could be split into CLI and direct usage.
+### CLI
+...
+### JS
+...
 
-<!-- Contributing section. You should have a CONTRIBUTING.md file in your project -->
+## Configuration
+Options to choose from if there are any should be listed inside this file.
+
 ## Contributing
 See [CONTRIBUTING.md](CONTRIBUTING.md) for info on contributing to eslint-config
 
