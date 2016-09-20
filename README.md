@@ -1,4 +1,4 @@
-![commercetools-icon](https://github.com/commercetools/press-kit/blob/master/PNG/72DPI/CT%20logo%20horizontal%20RGB%2072dpi.png?raw=true)
+[![commercetools logo][commercetools-icon]][commercetools]
 
 # Node.js boilerplate
 [![Travis Build Status][travis-icon]][travis]
@@ -36,6 +36,7 @@ Make sure you have installed all of the following prerequisites on your developm
 
 
 [commercetools]: https://commercetools.com/
+[commercetools-icon]: https://cdn.rawgit.com/commercetools/press-kit/master/PNG/72DPI/CT%20logo%20horizontal%20RGB%2072dpi.png
 [travis]: https://travis-ci.org/commercetools/nodejs-boilerplate
 [travis-icon]: https://img.shields.io/travis/commercetools/nodejs-boilerplate/master.svg?style=flat-square
 [codecov]: https://codecov.io/gh/commercetools/nodejs-boilerplate

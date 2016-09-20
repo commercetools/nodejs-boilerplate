@@ -1,6 +1,5 @@
 <!-- This is the readme template for commercetools nodejs projects. We recommend you following this format when writing a readme project -->
-<!-- Commercetools Logo -->
-![commercetools-icon](https://github.com/commercetools/press-kit/blob/master/PNG/72DPI/CT%20logo%20horizontal%20RGB%2072dpi.png?raw=true)
+[![commercetools logo][commercetools-icon]][commercetools]
 
 # Unslugified Project Title
 <!-- Badges -->
@@ -22,6 +21,7 @@ How to use this project, possibly with a small code example.
 See [CONTRIBUTING.md](CONTRIBUTING.md) for info on contributing to eslint-config
 
 [commercetools]: https://commercetools.com/
+[commercetools-icon]: https://cdn.rawgit.com/commercetools/press-kit/master/PNG/72DPI/CT%20logo%20horizontal%20RGB%2072dpi.png
 [travis]: https://travis-ci.org/commercetools/project-title
 [travis-icon]: https://img.shields.io/travis/commercetools/project-title/master.svg?style=flat-square
 [codecov]: https://codecov.io/gh/commercetools/project-title
