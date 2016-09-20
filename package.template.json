@@ -16,9 +16,9 @@
     "url": "https://github.com/commercetools/project-name.git"
   },
   "scripts": {
-    "start": "npm run watch",
+    "start": "npm run test:watch",
     "test": "cross-env NODE_ENV=test babel-node test/*.spec.js test/*/**spec.js | tap-spec",
-    "test:watch": "watch 'npm test' bin src test -d",
+    "test:watch": "watch 'npm test' optional-directory src test -d",
     "build": "npm run clean && babel src -d lib",
     "clean": "rimraf lib/* && mkdirp lib",
     "commit": "git-cz",

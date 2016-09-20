@@ -17,15 +17,13 @@ Table of Contents
     * [Requirements](#requirements)
     * [Usage](#usage)
     * [Development](#development)
-    * [Guidelines](#guidelines)
 
 ## Features
 - Babel: use new JavaScript features while keeping compatibility.
 - TravisCI: config and setup included.
-- GreenKeeper: keep your dependencies up-to-date.
-- Guidelines: includes a contributing document
-- Readme: includes a readme template
-- Tests: Uses [tape][tape] for testing
+- ESLint: config to keep the coding style consistent.
+- Templates: includes readme and package.json templates.
+- Tests: uses [tape][tape] for testing.
 
 ## Requirements
 Make sure you have installed all of the following prerequisites on your development machine:
@@ -38,16 +36,14 @@ Make sure you have installed all of the following prerequisites on your developm
   ```bash
   git clone --depth=1 https://github.com/commercetools/nodejs-boilerplate.git
   ```
-  2. Clean up and install
+  2. Clean up, setup and install.  
+  Takes the project name and an optional second directory like `bin` to use.
 
   ```bash
-  cd nodejs-boilerplate && rm -r .git && npm install
+  sh setup.sh project-name optional-directory
   ```
-  3. Update the package.json and readme
+  3. Now you're ready for liftoff!
 
-Now you're ready for liftoff!
-
-## Guidelines
 
 [commercetools]: https://commercetools.com/
 [travis]: https://travis-ci.org/commercetools/nodejs-boilerplate
