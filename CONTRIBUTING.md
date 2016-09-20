@@ -2,10 +2,10 @@
 First of all, thank you for contributing. It’s appreciated. This guide details how to use issues and pull requests to improve this project.
 
 ## Running
-Watch for file changes then lint and test:  
-`npm start` or `npm run watch`
+Watch for file changes then lint and test:
+`npm start`
 
-Babelify everything in `src` output to `lib`:  
+Babelify everything in `src` output to `lib`:
 `npm run build`
 
 ## Making changes
