@@ -1,34 +1,24 @@
 {
-  "name": "@commercetools/nodejs-boilerplate",
-  "version": "1.0.0-beta.1",
-  "description": "Generic Boilerplate for bootstrapping commercetools applications",
-  "private": true,
+  "name": "project-name",
+  "version": "1.0.0",
+  "description": "",
   "keywords": [
     "commercetools",
-    "nodejs",
-    "boilerplate",
-    "starter"
+    "nodejs"
   ],
-  "homepage": "https://github.com/commercetools/nodejs-boilerplate#readme",
-  "bugs": {
-    "url": "https://github.com/commercetools/nodejs-boilerplate/issues"
-  },
+  "homepage": "https://github.com/commercetools/project-name#readme",
+  "bugs": "https://github.com/commercetools/project-name/issues",
   "license": "MIT",
-  "contributors": [
-    "Abimbola Idowu <abimbola.idowu@commercetools.de>",
-    "Nicola Molinari <nicola.molinari@commercetools.de>",
-    "Philipp Sporrer <philipp.sporrer@commercetools.de>",
-    "Selwyn Versteeg <selwyn.versteeg@commercetools.de>"
-  ],
-  "main": "./lib/main",
+  "author": "",
+  "main": "",
   "repository": {
     "type": "git",
-    "url": "https://github.com/commercetools/nodejs-boilerplate.git"
+    "url": "https://github.com/commercetools/project-name.git"
   },
   "scripts": {
     "start": "npm run test:watch",
     "test": "cross-env NODE_ENV=test NODE_PATH=./src babel-node node_modules/.bin/tape test/*.spec.js test/**/*.spec.js | tap-spec",
-    "test:watch": "watch 'npm test' src test -d",
+    "test:watch": "watch 'npm test' optional-directory src test -d",
     "build": "npm run clean && babel src -d lib",
     "clean": "rimraf lib/*",
     "commit": "git-cz",
@@ -47,14 +37,7 @@
     }
   },
   "eslintConfig": {
-    "extends": "commercetools",
-    "settings": {
-      "import/resolver": {
-        "node": {
-          "paths": ["src/"]
-        }
-      }
-    }
+    "extends": "commercetools"
   },
   "devDependencies": {
     "babel-cli": "^6.14.0",
@@ -64,7 +47,7 @@
     "commitizen": "^2.8.6",
     "cross-env": "^2.0.1",
     "cz-conventional-changelog": "^1.2.0",
-    "eslint-config-commercetools": "^3.2.0",
+    "eslint-config-commercetools": "^3.1.0",
     "ghooks": "^1.3.2",
     "nyc": "^8.1.0",
     "rimraf": "^2.5.4",

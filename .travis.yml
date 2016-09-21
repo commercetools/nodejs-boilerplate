@@ -1,0 +1,14 @@
+language: node_js
+node_js:
+- '4'
+- '6'
+script:
+- npm run coverage
+- npm run codecov
+notifications:
+  hipchat:
+    on_pull_requests: false
+    rooms:
+      secure: pu4z/YvwUIWH5laa7vdzDr9q9C7ahkKoY51RQjJw5U9XoPSF/KEdaLDpeFjs79MfvW+vPaXM9hqXCNX5azILNTwe085xcG33vUiDJbyVVFa+GUzhAE4BUzBmCnpuwlaUr9qZUD1TxlUXaJaCq0Oa1Cb66tINQo2ljFAwXA11xB0j6bNyaN9tdK9tMDUN0mrITp2ce40QTHMRqpPExqjWTvtZDY2k8XJWi2lHVxPOI+JyTdvdGNHLyinph1l0z0eoDbrv8jrNKPr1QMg1W6oQ5o9YoSly4d2wkUvzTrbxnPLBdR7t+pK9PThJ39JTatyoiD8RKrvRMq21UPF/d9mbqolyO5VgPzDuM4z/MlwX5Q5Y0QiW4zuecjqxARqtR+BOlg6WwC6lBTPXhoYd7vMRidZklV8huXdJ/RUQ1O2YIfZBQxXy19dOw3r6qMKkdH1q1OgFBPQtezAUwIv0d/Gk4llpEM078tNuh3XHQ9vGryrEnqcehDhxwTWaf3hsrTA014vH+kq0zPPlfa+bOev517+TZDNO6jdsClmN4SBRYd00KvnkG44vsx8CmwqaGBowSYv8sZcRvsZn1fJlct9AzCM07/7KLiWvmdEMhtnT+5g96czUEQVNheI7wqAKn0A4sg+SYdv0wSNLNT5/NyauN7PrTnfE5iRVPtghSWroyd4=
+    template:
+      - '%{repository}#%{build_number} (%{branch} - %{commit} : %{author}): %{message}'
