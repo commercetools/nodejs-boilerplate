@@ -27,7 +27,7 @@
   },
   "scripts": {
     "start": "npm run test:watch",
-    "test": "cross-env NODE_ENV=test NODE_PATH=./src babel-node test/*.spec.js test/**/*.spec.js | tap-spec",
+    "test": "cross-env NODE_ENV=test NODE_PATH=./src babel-node node_modules/.bin/tape test/*.spec.js test/**/*.spec.js | tap-spec",
     "test:watch": "watch 'npm test' src test -d",
     "build": "npm run clean && babel src -d lib",
     "clean": "rimraf lib/*",
