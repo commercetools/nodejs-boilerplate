@@ -18,7 +18,7 @@
   "scripts": {
     "start": "npm run test:watch",
     "test": "cross-env NODE_ENV=test NODE_PATH=./src babel-node node_modules/.bin/tape test/*.spec.js test/**/*.spec.js | tap-spec",
-    "test:watch": "watch 'npm test' optional-directory src test -d",
+    "test:watch": "chokidar src test optional-directory -c 'npm test'",
     "build": "npm run clean && babel src -d lib",
     "clean": "rimraf lib/*",
     "commit": "git-cz",
@@ -51,6 +51,7 @@
     "babel-eslint": "^6.1.2",
     "babel-plugin-istanbul": "^2.0.1",
     "babel-preset-es2015": "^6.14.0",
+    "chokidar-cli": "^1.2.0",
     "codecov": "^1.0.1",
     "commitizen": "^2.8.6",
     "cross-env": "^2.0.1",
@@ -67,8 +68,7 @@
     "rimraf": "^2.5.4",
     "tap-spec": "^4.1.1",
     "tape": "^4.6.0",
-    "validate-commit-msg": "^2.8.0",
-    "watch": "^0.19.2"
+    "validate-commit-msg": "^2.8.0"
   },
   "engines": {
     "node": ">= 4.5.0"

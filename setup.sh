@@ -20,12 +20,12 @@ fi
 
 # Fill in and create optional directory if argument is given
 if [ $2 ]; then
-    sed -i "" "s/ optional-directory/ $2/g" "package.json"
+    sed -i "" "s/optional-directory / $2/g" "package.json"
     mkdir $2
     echo "Created $2 directory."
 # Else remove references to optional directory
 else
-    sed -i "" "s/ optional-directory//g" "package.json"
+    sed -i "" "s/optional-directory //g" "package.json"
 fi
 
 # Install dependencies
@@ -35,4 +35,3 @@ echo "Installed npm dependencies."
 # Self destruct
 rm setup.sh
 echo "All done!"
-
