@@ -22,7 +22,7 @@ How to use this project, possibly with a small code example. Could be split into
 Options to choose from if there are any should be listed inside this file.
 
 ## Contributing
-See [CONTRIBUTING.md](CONTRIBUTING.md) for info on contributing to eslint-config
+See [CONTRIBUTING.md](CONTRIBUTING.md) for info on contributing.
 
 [commercetools]: https://commercetools.com/
 [commercetools-icon]: https://cdn.rawgit.com/commercetools/press-kit/master/PNG/72DPI/CT%20logo%20horizontal%20RGB%2072dpi.png
