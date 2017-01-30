@@ -1,6 +1,8 @@
 # Contributing
 First of all, thank you for contributing. It’s appreciated. This guide details how to use issues and pull requests to improve this project.
 
+We now have a central repository for the sdk and our tools. Gradually, we will be migrating all our tools to the repository. Keep an eye on it [here](https://github.com/commercetools/nodejs)
+
 ## Running
 Watch for file changes then lint and test:
 `npm start`
@@ -34,6 +36,13 @@ Make sure your commit messages follow the [Angular's format](https://github.com/
 Before you create a new issue:
   * Check the issues on Github to ensure that one doesn't already exist.
   * Clearly describe the issue, there is an [ISSUE_TEMPLATE](.github/ISSUE_TEMPLATE.md) to guide you.
+  * Assign the issue to yourself if you working on it, and add the _in_progress_ label.
+
+## Pull Requests:
+  * Before you submit a pull request, **please make sure there is an existing issue opened** about this pull requests
+  * In the assignees section, please assign yourself and in the reviewers section add the users that you will like to review your PR including the devs from the NodeJS team.
+  * Add the _review_ label when the PR is ready to be reviewed or add _in_progress_ when you still working on it.
+  * Reference the issue in the PR description so that it's closed when the PR is merged (not necessarily if a commit already reference the issue, you can read [here](https://help.github.com/articles/closing-issues-via-commit-messages/) and [here](https://github.com/blog/1506-closing-issues-via-pull-requests) for more info)
 
 ## Tests
 We use [tape](https://github.com/substack/tape) for unit and integration test. You can use [Cucumber](https://github.com/cucumber/cucumber-js) for acceptance tests.
