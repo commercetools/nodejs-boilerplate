@@ -83,7 +83,7 @@
     "validate-commit-msg": "^2.8.0"
   },
   "engines": {
-    "node": ">= 4.5.0"
+    "node": ">= 6.0.0"
   },
   "nyc": {
     "include": [
